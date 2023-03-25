@@ -1,6 +1,6 @@
 extends Node2D
 
-const fixed_value = 3
+const FIXED = 356
 
 var life = 40
 var test = "Hello There"
