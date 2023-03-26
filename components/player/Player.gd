@@ -8,35 +8,33 @@ var tween: Tween
 var time = 0.25
 
 func _process(delta):
-	var x = self.position.x
-	var y = self.position.y
 	
 	if Input.is_action_just_pressed("ui_right") and not animation_running:
 		tween = create_tween()
 		animation_running = true
 		if _animated_sprite.flip_h:
 			_animated_sprite.flip_h = false
-		direction = Vector2(x + 45, y)
-		tween.tween_property(self, "position", direction, time)
+		direction = Vector2(45, 0)
+		tween.tween_property(self, "position", direction, time).as_relative()
 	
 	if Input.is_action_just_pressed("ui_left") and not animation_running:
 		tween = create_tween()
 		animation_running = true
 		_animated_sprite.flip_h = true
-		direction = Vector2(x - 45, y)
-		tween.tween_property(self, "position", direction, time)
+		direction = Vector2(-45, 0)
+		tween.tween_property(self, "position", direction, time).as_relative()
 	
 	if Input.is_action_just_pressed("ui_down") and not animation_running:
 		tween = create_tween()
 		animation_running = true
-		direction = Vector2(x, y + 45)
-		tween.tween_property(self, "position", direction, time)
+		direction = Vector2(0, 45)
+		tween.tween_property(self, "position", direction, time).as_relative()
 	
 	if Input.is_action_just_pressed("ui_up") and not animation_running:
 		tween = create_tween()
 		animation_running = true
-		direction = Vector2(x, y - 45)
-		tween.tween_property(self, "position", direction, time)
+		direction = Vector2(0,-45)
+		tween.tween_property(self, "position", direction, time).as_relative()
 		
 	if animation_running:
 		_animated_sprite.play("walk")

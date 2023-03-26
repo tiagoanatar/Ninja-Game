@@ -36,3 +36,7 @@ func _ready():
 	# print(life)
 	# loop_test()
 	print(dictionary.size())
+	
+func _process(delta):
+	var x = self.position.x
+	var y = self.position.y
