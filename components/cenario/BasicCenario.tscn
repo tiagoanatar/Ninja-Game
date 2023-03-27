@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://djen7o3c8a6s0"]
+
+[ext_resource type="Script" path="res://components/cenario/basic_cenario.gd" id="1_vwcqp"]
+[ext_resource type="Script" path="res://components/cenario/grid.gd" id="2_apogc"]
+
+[node name="Basic_Cenario" type="Node2D"]
+script = ExtResource("1_vwcqp")
+
+[node name="Grid" type="Node2D" parent="."]
+script = ExtResource("2_apogc")

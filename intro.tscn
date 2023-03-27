@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://c2lam1v21a5jr"]
+[gd_scene load_steps=4 format=3 uid="uid://c2lam1v21a5jr"]
 
-[ext_resource type="PackedScene" uid="uid://qkkbv6yoxbye" path="res://components/player/Player.tscn" id="1_e33tb"]
-[ext_resource type="Script" path="res://intro.gd" id="1_p4roa"]
+[ext_resource type="Script" path="res://intro.gd" id="1_jk175"]
+[ext_resource type="PackedScene" path="res://components/player/Player.tscn" id="2_0hqm2"]
+[ext_resource type="PackedScene" uid="uid://djen7o3c8a6s0" path="res://components/cenario/BasicCenario.tscn" id="3_3nhc6"]
 
 [node name="intro" type="Node2D"]
-script = ExtResource("1_p4roa")
+script = ExtResource("1_jk175")
 
-[node name="Player" parent="." instance=ExtResource("1_e33tb")]
-position = Vector2(530, 203)
+[node name="Player" parent="." instance=ExtResource("2_0hqm2")]
+position = Vector2(180, 180)
+
+[node name="Basic_Cenario" parent="." instance=ExtResource("3_3nhc6")]
