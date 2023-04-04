@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfltd1dqmxlqe"
-path="res://.godot/imported/move (1).png-60d8ec9a4d2cba23a2d1c2b2b20b4b7f.ctex"
+uid="uid://bdyrd854ln711"
+path="res://.godot/imported/mansion-01.png-32c69ba63ff396d00145968e3d790fea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/players/main/move (1).png"
-dest_files=["res://.godot/imported/move (1).png-60d8ec9a4d2cba23a2d1c2b2b20b4b7f.ctex"]
+source_file="res://graphics/cenario/mansion-01.png"
+dest_files=["res://.godot/imported/mansion-01.png-32c69ba63ff396d00145968e3d790fea.ctex"]
 
 [params]
 

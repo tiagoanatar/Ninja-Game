@@ -1,6 +1,7 @@
 extends AnimatableBody2D
 
 @onready var _animated_sprite = $AnimatedSprite2D
+@onready var _colision_shape = $CollisionShape2D
 
 var animation_running = false
 var direction: Vector2
