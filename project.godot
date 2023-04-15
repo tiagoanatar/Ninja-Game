@@ -15,6 +15,10 @@ run/main_scene="res://components/cenario/BasicCenario.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+_store="*res://globals/_store.gd"
+
 [display]
 
 window/size/viewport_width=800

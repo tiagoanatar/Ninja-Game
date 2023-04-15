@@ -1,10 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://ckecwx7vhrh0t"]
+[gd_scene load_steps=6 format=3 uid="uid://blqjnko0anvpx"]
 
-[ext_resource type="Script" path="res://components/player/player.gd" id="1_bei8r"]
+[ext_resource type="Script" path="res://components/player/Player.gd" id="1_k3tv3"]
 [ext_resource type="Texture2D" uid="uid://nlrd48bq2vj1" path="res://graphics/players/main/move-2-bigger.png" id="2_fx810"]
 [ext_resource type="Texture2D" uid="uid://cdscudmfdqp0h" path="res://graphics/players/main/move-1-bigger.png" id="3_ovpw1"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_1jfr2"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_p4q8c"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -26,19 +26,19 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bcw77"]
-size = Vector2(45, 45)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1ruc"]
+size = Vector2(35, 35)
 
-[node name="Player" type="AnimatableBody2D"]
-script = ExtResource("1_bei8r")
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_k3tv3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -8)
-sprite_frames = SubResource("SpriteFrames_1jfr2")
+sprite_frames = SubResource("SpriteFrames_p4q8c")
 animation = &"walk"
-frame_progress = 0.571755
-
-[node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_bcw77")
+shape = SubResource("RectangleShape2D_n1ruc")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false

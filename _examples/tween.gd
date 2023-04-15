@@ -3,7 +3,7 @@ var player_test = preload("res://components/player/Player.tscn")
 
 func _process(delta):
 	
-	# Tween transition
+	# Tween transition + animation
 	var tween = create_tween()
 	var direction = Vector2(45, 0)
 	var time = 1
