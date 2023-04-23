@@ -1,33 +1,26 @@
 class_name Grid
 extends Node2D
 
-@export var width = 10
-@export var height = 10
 @export var cell_size = 45
 
-var grid: Dictionary = {}
-
-func cell_factory(x, y):
-	return {"x": x * cell_size, "y": y * cell_size, "type": "OPEN", "blocked": false }
+var grid = {}
 
 func generate_grid():
-	for y in width:
-		grid[y] = {}
-		for x in height:
-			grid[y][x] = cell_factory(x, y)
-			
-			# draw rectangules
-			var rect = ReferenceRect.new()
-			rect.position = Vector2(grid[y][x].x, grid[y][x].y)
-			rect.size = Vector2(cell_size, cell_size)
-			rect.editor_only = false
-			add_child(rect)
-			
-			#draw label
-			var label = Label.new()
-			label.position = Vector2(grid[y][x].x, grid[y][x].y)
-			label.text = grid[y][x].type + str(Vector2(grid[y][x].x, grid[y][x].y))
-			label.label_settings = LabelSettings.new()
-			label.label_settings.font_size = 10
-			add_child(label)
+	for y in _store.current_map_grid:
+		grid[y] = y
+		
+		# draw rectangules
+		var rect = ReferenceRect.new()
+		rect.position = Vector2(grid[y]*_store.tile_size)
+		rect.size = Vector2(_store.tile_size, _store.tile_size)
+		rect.editor_only = false
+		add_child(rect)
+		
+		#draw label
+		var label = Label.new()
+		label.position = Vector2(grid[y]*_store.tile_size)
+		label.text = str(Vector2(grid[y]))
+		label.label_settings = LabelSettings.new()
+		label.label_settings.font_size = 12
+		add_child(label)
 

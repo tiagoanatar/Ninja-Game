@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://components/cenario/basic_cenario.gd" id="1_vwcqp"]
 [ext_resource type="Script" path="res://components/cenario/grid.gd" id="2_apogc"]
 [ext_resource type="PackedScene" uid="uid://blqjnko0anvpx" path="res://components/player/Player.tscn" id="2_cljkd"]
-[ext_resource type="PackedScene" uid="uid://dehp02jvh3f64" path="res://components/cenario/mansion-01/mansion-01.tscn" id="3_c2ks5"]
+[ext_resource type="PackedScene" uid="uid://yogowxrxflw0" path="res://components/cenario/mansion-01/mansion-01.tscn" id="3_c2ks5"]
 
 [node name="Basic_Cenario" type="Node2D"]
 script = ExtResource("1_vwcqp")
@@ -13,6 +13,7 @@ z_index = 1
 position = Vector2(160, 205)
 
 [node name="Grid" type="Node2D" parent="."]
+z_index = 99
 script = ExtResource("2_apogc")
 
 [node name="mansion-01" parent="." instance=ExtResource("3_c2ks5")]
