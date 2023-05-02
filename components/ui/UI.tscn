@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2oxwicy8din3"]
+
+[ext_resource type="Script" path="res://components/ui/Label.gd" id="1_fpiap"]
+
+[node name="UI" type="Node2D"]
+
+[node name="Turn" type="Label" parent="."]
+offset_left = 45.0
+offset_top = 37.0
+offset_right = 332.0
+offset_bottom = 77.0
+text = "Placeholder"
+script = ExtResource("1_fpiap")

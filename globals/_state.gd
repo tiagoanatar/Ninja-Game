@@ -1,19 +1,19 @@
 extends Node
 
-enum TurnState {
-	NONE,
-	PLAYER_MOVE,
-	PLAYER_ATTACK,
-	PLAYER_ITEM,
-	ENEMY_MOVE,
-	ENEMY_ATTACK,
-	ENEMY_ITEM,
-	ENEMIES_CREATION,
-	STAGE_COMPLETE,
-	GAME_OVER,
-	SAVE_GAME,
-	PAUSE_GAME,
-	MAIN_MENU
+const TurnState = {
+	NONE = "none",
+	PLAYER_MOVE = "player_move",
+	PLAYER_ATTACK = "player_attack",
+	PLAYER_ITEM = "player_item",
+	ENEMY_MOVE = "enemy_move",
+	ENEMY_ATTACK = "enemy_attack",
+	ENEMY_ITEM = "enemy_item",
+	ENEMIES_CREATION = "enemies_creation",
+	STAGE_COMPLETE = "stage_complete",
+	GAME_OVER = "game_over",
+	SAVE_GAME = "save_game",
+	PAUSE_GAME = "pause_game",
+	MAIN_MENU = "main_menu"
 }
 
 var currentTurnState = TurnState.NONE
