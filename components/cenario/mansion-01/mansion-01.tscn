@@ -1,10 +1,10 @@
 [gd_scene load_steps=5 format=3 uid="uid://yogowxrxflw0"]
 
-[ext_resource type="Texture2D" uid="uid://bdyrd854ln711" path="res://graphics/cenario/mansion-01.png" id="1_v8crh"]
-[ext_resource type="Script" path="res://components/cenario/mansion-01/mansion-01.gd" id="2_ttwpe"]
+[ext_resource type="Texture2D" uid="uid://bdyrd854ln711" path="res://graphics/cenario/mansion-01.png" id="1_3kdut"]
+[ext_resource type="Script" path="res://components/cenario/mansion-01/mansion-01.gd" id="2_btx6f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ot1mj"]
-texture = ExtResource("1_v8crh")
+texture = ExtResource("1_3kdut")
 texture_region_size = Vector2i(45, 45)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -197,4 +197,4 @@ layer_2/y_sort_enabled = false
 layer_2/y_sort_origin = 0
 layer_2/z_index = 0
 layer_2/tile_data = PackedInt32Array()
-script = ExtResource("2_ttwpe")
+script = ExtResource("2_btx6f")

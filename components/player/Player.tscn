@@ -28,18 +28,21 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n1ruc"]
-size = Vector2(44.9, 44.9)
+size = Vector2(44, 44)
 
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
+safe_margin = 0.001
 script = ExtResource("1_jg3i3")
 
 [node name="UI" parent="." instance=ExtResource("2_tt426")]
+z_index = 99
+position = Vector2(-292, -180)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_p4q8c")
-animation = &"walk"
+animation = &"stop"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_n1ruc")

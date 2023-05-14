@@ -2,13 +2,13 @@
 
 [ext_resource type="Script" path="res://intro.gd" id="1_jk175"]
 [ext_resource type="PackedScene" uid="uid://dllaw2u54q46m" path="res://components/player/Player.tscn" id="2_0hqm2"]
-[ext_resource type="PackedScene" uid="uid://b0pvt4uwv55m1" path="res://components/cenario/BasicCenario.tscn" id="3_3nhc6"]
+[ext_resource type="PackedScene" uid="uid://djasttunfu81o" path="res://components/cenario/BasicCenario.tscn" id="3_3nhc6"]
 
 [node name="intro" type="Node2D"]
 script = ExtResource("1_jk175")
 
 [node name="Player" parent="." instance=ExtResource("2_0hqm2")]
 z_index = 99
-position = Vector2(157.5, 157.5)
+position = Vector2(112.5, 157.5)
 
 [node name="Basic_Cenario" parent="." instance=ExtResource("3_3nhc6")]

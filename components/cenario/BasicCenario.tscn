@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://b0pvt4uwv55m1"]
+[gd_scene load_steps=4 format=3 uid="uid://djasttunfu81o"]
 
 [ext_resource type="Script" path="res://components/cenario/basic_cenario.gd" id="1_vwcqp"]
 [ext_resource type="Script" path="res://components/cenario/grid.gd" id="2_apogc"]
