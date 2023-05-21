@@ -26,6 +26,7 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="Turn" type="Label" parent="CanvasLayer/Control/ColorRect"]
+layout_mode = 0
 offset_left = 23.0
 offset_top = 9.0
 offset_right = 310.0

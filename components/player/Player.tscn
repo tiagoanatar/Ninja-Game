@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dllaw2u54q46m"]
+[gd_scene load_steps=8 format=3 uid="uid://dllaw2u54q46m"]
 
 [ext_resource type="Script" path="res://components/player/player.gd" id="1_jg3i3"]
 [ext_resource type="Texture2D" uid="uid://nlrd48bq2vj1" path="res://graphics/players/main/move-2-bigger.png" id="2_fx810"]
 [ext_resource type="PackedScene" uid="uid://d2oxwicy8din3" path="res://components/ui/UI.tscn" id="2_tt426"]
 [ext_resource type="Texture2D" uid="uid://cdscudmfdqp0h" path="res://graphics/players/main/move-1-bigger.png" id="3_ovpw1"]
+[ext_resource type="PackedScene" uid="uid://d1x5b6cme4wrs" path="res://components/range_display/RangeDisplay.tscn" id="5_2crqm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p4q8c"]
 animations = [{
@@ -51,3 +52,5 @@ one_way_collision_margin = 0.0
 [node name="Camera2D" type="Camera2D" parent="."]
 visible = false
 position_smoothing_enabled = true
+
+[node name="RangeDisplay" parent="." instance=ExtResource("5_2crqm")]

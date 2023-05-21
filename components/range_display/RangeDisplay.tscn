@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1x5b6cme4wrs"]
+
+[ext_resource type="Script" path="res://components/range_display/range_display.gd" id="1_dwt5b"]
+
+[node name="RangeDisplay" type="Node2D"]
+script = ExtResource("1_dwt5b")

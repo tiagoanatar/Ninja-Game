@@ -1,4 +1,4 @@
-class_name Grid
+class_name GridComponent
 extends Node2D
 
 @export var cell_size = 45
