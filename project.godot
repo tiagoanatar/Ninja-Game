@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 _store="*res://globals/_store.gd"
 _state="*res://globals/_state.gd"
+_signals="*res://globals/_signals.gd"
 
 [display]
 

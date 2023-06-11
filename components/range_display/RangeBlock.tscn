@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdiov5yitjn25"]
+
+[sub_resource type="Gradient" id="Gradient_al11v"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(1, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_op5ou"]
+gradient = SubResource("Gradient_al11v")
+width = 45
+height = 45
+
+[node name="RangeBlock" type="Sprite2D"]
+texture = SubResource("GradientTexture2D_op5ou")
